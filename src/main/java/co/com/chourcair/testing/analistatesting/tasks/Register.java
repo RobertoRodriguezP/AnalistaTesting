@@ -18,8 +18,12 @@ public class Register implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(Click.on(UtestRegisterPage.JoinToday),
-        Enter.theValue("").into(UtestRegisterPage.FirstName),
-                Enter.theValue("").into(UtestRegisterPage.LastName)
+        Enter.theValue("Juan").into(UtestRegisterPage.FirstName),
+                Enter.theValue("Perez").into(UtestRegisterPage.Email),
+                Enter.theValue("1").into(UtestRegisterPage.DD_DATE),
+                Enter.theValue("2").into(UtestRegisterPage.MM_DATE),
+                Enter.theValue("1990").into(UtestRegisterPage.YY_DATE),
+               Click.on(UtestRegisterPage.Next1)
         );
 
 

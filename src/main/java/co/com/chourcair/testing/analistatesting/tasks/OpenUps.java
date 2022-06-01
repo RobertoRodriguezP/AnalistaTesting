@@ -17,6 +17,5 @@ public class OpenUps implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(Open.browserOn(UtestPage));
-
     }
 }

@@ -14,19 +14,20 @@ public class ChoucairAcademyStepDefintions {
     public void setStage(){
         OnStage.setTheStage(new OnlineCast());
     }
-    @Given("^The user opens the page$")
-    public void theUserOpensThePage() {
-        System.out.print("Inicio la vaina");
+    @Given("^The user opens the page and register$")
+    public void theUserOpensThePageAndRegister() {
         OnStage.theActorCalled("user").wasAbleTo(OpenUps.ThePage(), Register.OnThePage());
     }
 
-    @When("^the user registers$")
-    public void theUserRegisters() {
 
-    }
-
-    @Then("^the user login$")
+    @When("^the user login$")
     public void theUserLogin() {
-
     }
+
+    @Then("^check your user$")
+    public void checkYourUser() {
+    }
+
 }
+
+/**/
